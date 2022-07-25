@@ -5,23 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-
     <title>Frontend Mentor | Single Price Grid Component</title>
   </head>
-  <body>
-    <main>
-      <!-- 不必要的內容可以自行刪除! -->
-      Hello world!
-    </main>
-
-    <footer>
-      <!-- Span 裡可以換上自己的名字，並加上文字樣式(字重or顏色or其他) -->
-      <!-- footer 文字請置中於畫面，字體大小11px -->
-      <p>
-        Challenge by Frontend Mentor. Coded by
-        <span>Your Name Here</span>
-      </p>
-    </footer>
+  <body class="bg-slate-100">
+    <div class="md:h-screen overflow-y-scroll p-7 flex justify-center items-center">
+      <main class="md:w-[44rem] shadow-lg shadow-gray-300 overflow-hidden rounded-lg">
+        <header class="h-[17rem] md:h-[15rem] bg-white p-5 md:p-12 font-bold">
+            <h1 class="text-teal-500 text-xl md:text-[26px]">
+              Join our community
+            </h1>
+            <p class="text-base text-lime-400 pt-5 pb-3 md:text-xl">
+              30-day,hassle-free monry back guarantee
+            </p>
+            <span class="text-sm md:text-base md:text-[16px] text-slate-400">
+              Gain access to our full library of tutories along
+              with expert code reviews.Perfect for any developers who are serious about
+              honinh their skills.
+            </span>
+        </header>
+        <div class="md:flex">
+          <main class="h-[16rem] md:h-[17rem] md:w-[22rem] p-9 bg-teal-500">     
+            <h1 class="text-white text-xl font-bold">
+              Monthy Subscription
+            </h1>
+            <h2 class="pt-2 flex flex-nowrap">
+              <p class="text-3xl text-white font-bold">$29</p>
+              <span class="text-teal-200 py-2 pl-4">Per month</span>
+            </h2>
+            <h3 class="text-slate-200 pt-1">Full access for less than $1 a day</h3>
+            <a href="https://www.google.com.tw/" target="_blank">
+              <button class="w-full bg-lime-400 text-white py-3 mt-6 rounded-md font-bold shadow-lg shadow-lime-700/30 ease-in duration-150 hover:-translate-y-[0.25rem] hover:bg-rose-500 hover:shadow-rose-800/30 active:bg-rose-600">
+                Sign Up
+              </button>
+            </a>  
+          </main>
+          <footer class="h-[16rem] md:h-[17rem] md:w-[22rem] p-9 bg-teal-400 text-white">
+            <h1 class="text-xl font-bold mb-3">Why Us</h1>
+            <span class="font-normal text-[14px] text-slate-200">
+              <p>Tutorials by industry experts</p>
+              <p>Peer & expert review</p>
+              <p>Colding exercises</p>
+              <p>Access to our GitHub repots</p>
+              <p>Community forum</p>
+              <p>Flasgcard</p>
+              <p>New videos every week</p>
+            </span>
+          </footer>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
